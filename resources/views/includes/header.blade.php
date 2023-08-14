@@ -1,15 +1,18 @@
+@php $links = config('links'); @endphp
+
 <header>
     <div class="container">
         <nav class="navbar">
             <a href="#">
-                <img src="{{ asset('images/dc-logo.png') }}" alt="DC Comics Logo">
+                <figure>
+                    <img src="{{ asset('images/dc-logo.png') }}" alt="DC Comics Logo">
+                </figure>
             </a>
             <ul>
-                <li>Marco</li>
                 @foreach ($links as $link)
                     <li>
-                        <a href="{{ $link['url'] }}">
-                            {{ $link['text'] }}
+                        <a @class(['active' => $link['current']]) href="{{ $link['url'] }}">
+                            {{ strtoupper($link['text']) }}
                         </a>
                     </li>
                 @endforeach
