@@ -1,5 +1,5 @@
 @php
-    $actionComic = $comics[0];
+$actionComic = $comics[11];
 @endphp
 
 @include('includes/comic')
