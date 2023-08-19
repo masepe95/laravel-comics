@@ -11,10 +11,12 @@
                 </div>
                 @foreach ($comics as $comic)
                     <div class="card">
-                        <div class="img-container">
-                            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                        </div>
-                        <h5>{{ $comic['series'] }}</h5>
+                        <a href="{{ route("$comic[route]") }}">
+                            <div class="img-container">
+                                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                            </div>
+                            <h5>{{ $comic['series'] }}</h5>
+                        </a>
                     </div>
                 @endforeach
             </div>
@@ -27,7 +29,7 @@
             <div class="row">
                 @foreach ($merch as $m)
                     <div class="col">
-                        <img src="{{ asset("images/$m[image]") }}" alt="">
+                        <img src="{{ asset("images/$m[image]") }}" alt="{{ $m['title'] }}">
                         <h2>{{ $m['title'] }}</h2>
                     </div>
                 @endforeach
