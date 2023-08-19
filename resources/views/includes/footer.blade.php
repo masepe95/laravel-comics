@@ -14,9 +14,9 @@
                             DC COMICS
                         </h3>
                         <ul>
-                            @foreach ($dcComics as $e)
+                            @foreach ($dcComics as $item)
                                 <li>
-                                    <a href="#">{{ $e }}</a>
+                                    <a href="#">{{ $item }}</a>
                                 </li>
                             @endforeach
                         </ul>
@@ -24,9 +24,9 @@
                     <div>
                         <h3>SHOP</h3>
                         <ul>
-                            @foreach ($shop as $e)
+                            @foreach ($shop as $item)
                                 <li>
-                                    <a href="#">{{ $e }}</a>
+                                    <a href="#">{{ $item }}</a>
                                 </li>
                             @endforeach
                         </ul>
@@ -37,9 +37,9 @@
                         DC
                     </h3>
                     <ul>
-                        @foreach ($dc as $e)
+                        @foreach ($dc as $item)
                             <li>
-                                <a href="#">{{ $e }}</a>
+                                <a href="#">{{ $item }}</a>
                             </li>
                         @endforeach
                     </ul>
@@ -49,9 +49,9 @@
                         SITES
                     </h3>
                     <ul>
-                        @foreach ($sites as $e)
+                        @foreach ($sites as $item)
                             <li>
-                                <a href="#">{{ $e }}</a>
+                                <a href="#">{{ $item }}</a>
                             </li>
                         @endforeach
                     </ul>
