@@ -11,7 +11,7 @@
                 </div>
                 @foreach ($comics as $comic)
                     <div class="card">
-                        <a href="{{ route("$comic[route]") }}">
+                        <a href="{{ route('comic', $loop->index) }}">
                             <div class="img-container">
                                 <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
                             </div>
