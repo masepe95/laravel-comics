@@ -18,7 +18,7 @@
                 </div>
                 <div class="short-side">
                     <h3 class="adv">Advertisment</h3>
-                    <img src="{{ asset('images/actionComic.jpg') }}" alt="action comic">
+                    <img src="{{ asset('images/unleashheroic.jpg') }}" alt="advert">
                 </div>
             </div>
         </div>
